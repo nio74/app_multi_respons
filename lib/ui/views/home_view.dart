@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:app_multi_respons/ui/base_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key key}) : super(key: key);
 
-  @override
+ @override
   Widget build(BuildContext context) {
-    return Container(
-      child: child,
-    );
+    return Basewidget(builder: (context, sizingInformation) {
+      return Scaffold(
+          body: Center(
+        child: Text(sizingInformation.toString()),
+      ));
+    });
   }
 }

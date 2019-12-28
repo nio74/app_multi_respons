@@ -8,7 +8,11 @@ class Basewidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var sizingInformation = SizingInformation();
+    var mediaQuery = MediaQuery.of(context);
+    var sizingInformation = SizingInformation(
+      orientation: mediaQuery.orientation
+    );
+
     return builder(context,sizingInformation);
   }
 }
