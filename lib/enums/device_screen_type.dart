@@ -1,5 +1,5 @@
 enum DeviceScreenType{
-  Nobile,
+  Mobile,
   Tablet,
   Desktop
 }
